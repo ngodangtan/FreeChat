@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3EBB4D3223CBE8A1F91EDD5 /* Pods_FreeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */; };
 		D6563CC8250DE0C400F89946 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6563CC7250DE0C400F89946 /* InputContainerView.swift */; };
 		D6563CCA250DE3E900F89946 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6563CC9250DE3E900F89946 /* CustomTextField.swift */; };
 		D658A5AE250E5DC000ECF341 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */; };
+		D65ACE64250F4E3400A56393 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */; };
+		D65ACE66250F563600A56393 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D65ACE65250F563600A56393 /* GoogleService-Info.plist */; };
 		D6DDA723250128400079B88D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DDA722250128400079B88D /* LoginController.swift */; };
 		D6DDA725250128610079B88D /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DDA724250128610079B88D /* RegistrationController.swift */; };
 		D6DDA72725012CC20079B88D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DDA72625012CC20079B88D /* Extensions.swift */; };
@@ -23,9 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7430760CDFEAD6AE6C2A6A7A /* Pods-FreeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeChat.debug.xcconfig"; path = "Target Support Files/Pods-FreeChat/Pods-FreeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		C52B331FBAC476AC51159C18 /* Pods-FreeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeChat.release.xcconfig"; path = "Target Support Files/Pods-FreeChat/Pods-FreeChat.release.xcconfig"; sourceTree = "<group>"; };
+		CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6563CC7250DE0C400F89946 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputContainerView.swift; path = FreeChat/InputContainerView.swift; sourceTree = SOURCE_ROOT; };
 		D6563CC9250DE3E900F89946 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = FreeChat/CustomTextField.swift; sourceTree = SOURCE_ROOT; };
-		D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = FreeChat/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
+		D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = FreeChat/ViewModel/Authentication/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
+		D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		D65ACE65250F563600A56393 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D6DDA722250128400079B88D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		D6DDA724250128610079B88D /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		D6DDA72625012CC20079B88D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -45,12 +53,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EBB4D3223CBE8A1F91EDD5 /* Pods_FreeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57B966C01F0DC92CF072A8DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7430760CDFEAD6AE6C2A6A7A /* Pods-FreeChat.debug.xcconfig */,
+				C52B331FBAC476AC51159C18 /* Pods-FreeChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		874FA7F03CEEFC06D6103AAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D65ACE61250F4E0100A56393 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */,
+				D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		D68BAAEA24FF882D001D8F5D /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +101,8 @@
 			children = (
 				D6E66BFE24FF732400553157 /* FreeChat */,
 				D6E66BFD24FF732400553157 /* Products */,
+				57B966C01F0DC92CF072A8DB /* Pods */,
+				874FA7F03CEEFC06D6103AAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +129,7 @@
 				D6E66C0524FF732400553157 /* Main.storyboard */,
 				D6E66C0824FF732500553157 /* Assets.xcassets */,
 				D6E66C0A24FF732500553157 /* LaunchScreen.storyboard */,
+				D65ACE65250F563600A56393 /* GoogleService-Info.plist */,
 				D6E66C0D24FF732500553157 /* Info.plist */,
 			);
 			path = FreeChat;
@@ -123,7 +162,7 @@
 		D6E66C1724FF735600553157 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */,
+				D65ACE61250F4E0100A56393 /* Authentication */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -151,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6E66C1024FF732500553157 /* Build configuration list for PBXNativeTarget "FreeChat" */;
 			buildPhases = (
+				76D1168CD646BE06C0C945D5 /* [CP] Check Pods Manifest.lock */,
 				D6E66BF824FF732400553157 /* Sources */,
 				D6E66BF924FF732400553157 /* Frameworks */,
 				D6E66BFA24FF732400553157 /* Resources */,
+				A4EB415554DD1DAF7D46EBD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E66C0C24FF732500553157 /* LaunchScreen.storyboard in Resources */,
+				D65ACE66250F563600A56393 /* GoogleService-Info.plist in Resources */,
 				D6E66C0924FF732500553157 /* Assets.xcassets in Resources */,
 				D6E66C0724FF732400553157 /* Main.storyboard in Resources */,
 			);
@@ -210,12 +252,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76D1168CD646BE06C0C945D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4EB415554DD1DAF7D46EBD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeChat/Pods-FreeChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeChat/Pods-FreeChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeChat/Pods-FreeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6E66BF824FF732400553157 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D6E66C0424FF732400553157 /* ViewController.swift in Sources */,
+				D65ACE64250F4E3400A56393 /* RegistrationViewModel.swift in Sources */,
 				D6E66C0024FF732400553157 /* AppDelegate.swift in Sources */,
 				D6E66C1B24FF7D6000553157 /* ConversationsController.swift in Sources */,
 				D6E66C0224FF732400553157 /* SceneDelegate.swift in Sources */,
@@ -366,6 +451,7 @@
 		};
 		D6E66C1124FF732500553157 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7430760CDFEAD6AE6C2A6A7A /* Pods-FreeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +470,7 @@
 		};
 		D6E66C1224FF732500553157 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52B331FBAC476AC51159C18 /* Pods-FreeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
