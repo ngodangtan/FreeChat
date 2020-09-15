@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D3EBB4D3223CBE8A1F91EDD5 /* Pods_FreeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */; };
 		D6563CC8250DE0C400F89946 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6563CC7250DE0C400F89946 /* InputContainerView.swift */; };
 		D6563CCA250DE3E900F89946 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6563CC9250DE3E900F89946 /* CustomTextField.swift */; };
+		D656FD8A2510B7D4009C1383 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D656FD892510B7D4009C1383 /* AuthService.swift */; };
 		D658A5AE250E5DC000ECF341 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */; };
 		D65ACE64250F4E3400A56393 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */; };
 		D65ACE66250F563600A56393 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D65ACE65250F563600A56393 /* GoogleService-Info.plist */; };
@@ -31,6 +32,7 @@
 		CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6563CC7250DE0C400F89946 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputContainerView.swift; path = FreeChat/InputContainerView.swift; sourceTree = SOURCE_ROOT; };
 		D6563CC9250DE3E900F89946 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = FreeChat/CustomTextField.swift; sourceTree = SOURCE_ROOT; };
+		D656FD892510B7D4009C1383 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = FreeChat/AuthService.swift; sourceTree = SOURCE_ROOT; };
 		D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = FreeChat/ViewModel/Authentication/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
 		D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		D65ACE65250F563600A56393 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -66,7 +68,6 @@
 				7430760CDFEAD6AE6C2A6A7A /* Pods-FreeChat.debug.xcconfig */,
 				C52B331FBAC476AC51159C18 /* Pods-FreeChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,6 +147,7 @@
 		D6E66C1424FF734000553157 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				D656FD892510B7D4009C1383 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -302,6 +304,7 @@
 				D6E66C0424FF732400553157 /* ViewController.swift in Sources */,
 				D65ACE64250F4E3400A56393 /* RegistrationViewModel.swift in Sources */,
 				D6E66C0024FF732400553157 /* AppDelegate.swift in Sources */,
+				D656FD8A2510B7D4009C1383 /* AuthService.swift in Sources */,
 				D6E66C1B24FF7D6000553157 /* ConversationsController.swift in Sources */,
 				D6E66C0224FF732400553157 /* SceneDelegate.swift in Sources */,
 				D6DDA725250128610079B88D /* RegistrationController.swift in Sources */,
