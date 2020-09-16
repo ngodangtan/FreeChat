@@ -11,6 +11,10 @@
 		D6563CC8250DE0C400F89946 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6563CC7250DE0C400F89946 /* InputContainerView.swift */; };
 		D6563CCA250DE3E900F89946 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6563CC9250DE3E900F89946 /* CustomTextField.swift */; };
 		D656FD8A2510B7D4009C1383 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D656FD892510B7D4009C1383 /* AuthService.swift */; };
+		D6589B462511B7A500E2CD4A /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6589B452511B7A500E2CD4A /* NewMessageController.swift */; };
+		D6589B492511BC9E00E2CD4A /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6589B482511BC9E00E2CD4A /* UserCell.swift */; };
+		D6589B4B2511C16800E2CD4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6589B4A2511C16800E2CD4A /* User.swift */; };
+		D6589B4D2511C1B000E2CD4A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6589B4C2511C1B000E2CD4A /* Service.swift */; };
 		D658A5AE250E5DC000ECF341 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */; };
 		D65ACE64250F4E3400A56393 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */; };
 		D65ACE66250F563600A56393 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D65ACE65250F563600A56393 /* GoogleService-Info.plist */; };
@@ -33,6 +37,10 @@
 		D6563CC7250DE0C400F89946 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputContainerView.swift; path = FreeChat/InputContainerView.swift; sourceTree = SOURCE_ROOT; };
 		D6563CC9250DE3E900F89946 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = FreeChat/CustomTextField.swift; sourceTree = SOURCE_ROOT; };
 		D656FD892510B7D4009C1383 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = FreeChat/AuthService.swift; sourceTree = SOURCE_ROOT; };
+		D6589B452511B7A500E2CD4A /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		D6589B482511BC9E00E2CD4A /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = FreeChat/Controller/UserCell.swift; sourceTree = SOURCE_ROOT; };
+		D6589B4A2511C16800E2CD4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = FreeChat/Controller/User.swift; sourceTree = SOURCE_ROOT; };
+		D6589B4C2511C1B000E2CD4A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = FreeChat/Controller/Service.swift; sourceTree = SOURCE_ROOT; };
 		D658A5AD250E5DC000ECF341 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = FreeChat/ViewModel/Authentication/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
 		D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		D65ACE65250F563600A56393 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -148,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				D656FD892510B7D4009C1383 /* AuthService.swift */,
+				D6589B4C2511C1B000E2CD4A /* Service.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -157,6 +166,7 @@
 			children = (
 				D68BAAEA24FF882D001D8F5D /* Authentication */,
 				D6E66C1A24FF7D6000553157 /* ConversationsController.swift */,
+				D6589B452511B7A500E2CD4A /* NewMessageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +184,7 @@
 			children = (
 				D6563CC7250DE0C400F89946 /* InputContainerView.swift */,
 				D6563CC9250DE3E900F89946 /* CustomTextField.swift */,
+				D6589B482511BC9E00E2CD4A /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 		D6E66C1924FF735B00553157 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D6589B4A2511C16800E2CD4A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,12 +319,16 @@
 				D656FD8A2510B7D4009C1383 /* AuthService.swift in Sources */,
 				D6E66C1B24FF7D6000553157 /* ConversationsController.swift in Sources */,
 				D6E66C0224FF732400553157 /* SceneDelegate.swift in Sources */,
+				D6589B492511BC9E00E2CD4A /* UserCell.swift in Sources */,
 				D6DDA725250128610079B88D /* RegistrationController.swift in Sources */,
+				D6589B4B2511C16800E2CD4A /* User.swift in Sources */,
+				D6589B4D2511C1B000E2CD4A /* Service.swift in Sources */,
 				D6563CC8250DE0C400F89946 /* InputContainerView.swift in Sources */,
 				D6DDA723250128400079B88D /* LoginController.swift in Sources */,
 				D6DDA72725012CC20079B88D /* Extensions.swift in Sources */,
 				D658A5AE250E5DC000ECF341 /* LoginViewModel.swift in Sources */,
 				D6563CCA250DE3E900F89946 /* CustomTextField.swift in Sources */,
+				D6589B462511B7A500E2CD4A /* NewMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
