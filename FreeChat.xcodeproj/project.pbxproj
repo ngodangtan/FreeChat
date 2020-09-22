@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D3EBB4D3223CBE8A1F91EDD5 /* Pods_FreeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */; };
+		D62814D12519B86900FA55E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62814D02519B86900FA55E0 /* Constants.swift */; };
 		D64EAA1C2518E70E00B46006 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EAA1B2518E70E00B46006 /* Message.swift */; };
 		D64EAA1F2518EAB100B46006 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EAA1E2518EAB100B46006 /* MessageViewModel.swift */; };
 		D6563CC8250DE0C400F89946 /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6563CC7250DE0C400F89946 /* InputContainerView.swift */; };
@@ -39,6 +40,7 @@
 		7430760CDFEAD6AE6C2A6A7A /* Pods-FreeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeChat.debug.xcconfig"; path = "Target Support Files/Pods-FreeChat/Pods-FreeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		C52B331FBAC476AC51159C18 /* Pods-FreeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeChat.release.xcconfig"; path = "Target Support Files/Pods-FreeChat/Pods-FreeChat.release.xcconfig"; sourceTree = "<group>"; };
 		CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62814D02519B86900FA55E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D64EAA1B2518E70E00B46006 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = FreeChat/Message.swift; sourceTree = SOURCE_ROOT; };
 		D64EAA1E2518EAB100B46006 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		D6563CC7250DE0C400F89946 /* InputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputContainerView.swift; path = FreeChat/InputContainerView.swift; sourceTree = SOURCE_ROOT; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				D6DDA72625012CC20079B88D /* Extensions.swift */,
+				D62814D02519B86900FA55E0 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E66C0424FF732400553157 /* ViewController.swift in Sources */,
+				D62814D12519B86900FA55E0 /* Constants.swift in Sources */,
 				D65ACE64250F4E3400A56393 /* RegistrationViewModel.swift in Sources */,
 				D6E66C0024FF732400553157 /* AppDelegate.swift in Sources */,
 				D656FD8A2510B7D4009C1383 /* AuthService.swift in Sources */,
