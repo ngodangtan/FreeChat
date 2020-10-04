@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D3EBB4D3223CBE8A1F91EDD5 /* Pods_FreeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */; };
+		D60F73BB251AFA0D00EA3907 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F73BA251AFA0D00EA3907 /* ProfileViewModel.swift */; };
+		D60F73BD251AFB7F00EA3907 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F73BC251AFB7F00EA3907 /* ProfileCell.swift */; };
+		D60F73C0251B018900EA3907 /* ProfileFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F73BF251B018900EA3907 /* ProfileFooter.swift */; };
 		D62814D12519B86900FA55E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62814D02519B86900FA55E0 /* Constants.swift */; };
 		D64EAA1C2518E70E00B46006 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EAA1B2518E70E00B46006 /* Message.swift */; };
 		D64EAA1F2518EAB100B46006 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EAA1E2518EAB100B46006 /* MessageViewModel.swift */; };
@@ -23,6 +26,10 @@
 		D65ACE64250F4E3400A56393 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */; };
 		D65ACE66250F563600A56393 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D65ACE65250F563600A56393 /* GoogleService-Info.plist */; };
 		D6787C082512FF3C0064ABC2 /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6787C072512FF3C0064ABC2 /* CustomInputAccessoryView.swift */; };
+		D6A01066251A563E004D9E54 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A01065251A563E004D9E54 /* ConversationCell.swift */; };
+		D6A0106A251A5932004D9E54 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A01069251A5932004D9E54 /* ConversationViewModel.swift */; };
+		D6A01080251A5D89004D9E54 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A0107F251A5D89004D9E54 /* ProfileController.swift */; };
+		D6A01083251A5F18004D9E54 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A01082251A5F18004D9E54 /* ProfileHeader.swift */; };
 		D6DDA723250128400079B88D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DDA722250128400079B88D /* LoginController.swift */; };
 		D6DDA725250128610079B88D /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DDA724250128610079B88D /* RegistrationController.swift */; };
 		D6DDA72725012CC20079B88D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DDA72625012CC20079B88D /* Extensions.swift */; };
@@ -40,6 +47,9 @@
 		7430760CDFEAD6AE6C2A6A7A /* Pods-FreeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeChat.debug.xcconfig"; path = "Target Support Files/Pods-FreeChat/Pods-FreeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		C52B331FBAC476AC51159C18 /* Pods-FreeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeChat.release.xcconfig"; path = "Target Support Files/Pods-FreeChat/Pods-FreeChat.release.xcconfig"; sourceTree = "<group>"; };
 		CFC96D3789F2CE659F82E167 /* Pods_FreeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60F73BA251AFA0D00EA3907 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D60F73BC251AFB7F00EA3907 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileCell.swift; path = FreeChat/ViewModel/ProfileCell.swift; sourceTree = SOURCE_ROOT; };
+		D60F73BF251B018900EA3907 /* ProfileFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileFooter.swift; path = FreeChat/ViewModel/ProfileFooter.swift; sourceTree = SOURCE_ROOT; };
 		D62814D02519B86900FA55E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D64EAA1B2518E70E00B46006 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = FreeChat/Message.swift; sourceTree = SOURCE_ROOT; };
 		D64EAA1E2518EAB100B46006 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
@@ -55,6 +65,10 @@
 		D65ACE63250F4E3400A56393 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		D65ACE65250F563600A56393 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D6787C072512FF3C0064ABC2 /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomInputAccessoryView.swift; path = FreeChat/Controller/CustomInputAccessoryView.swift; sourceTree = SOURCE_ROOT; };
+		D6A01065251A563E004D9E54 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationCell.swift; path = FreeChat/ConversationCell.swift; sourceTree = SOURCE_ROOT; };
+		D6A01069251A5932004D9E54 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
+		D6A0107F251A5D89004D9E54 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		D6A01082251A5F18004D9E54 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileHeader.swift; path = FreeChat/Controller/ProfileHeader.swift; sourceTree = SOURCE_ROOT; };
 		D6DDA722250128400079B88D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		D6DDA724250128610079B88D /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		D6DDA72625012CC20079B88D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -181,6 +195,7 @@
 				D6E66C1A24FF7D6000553157 /* ConversationsController.swift */,
 				D6589B452511B7A500E2CD4A /* NewMessageController.swift */,
 				D6589B512511F68400E2CD4A /* ChatController.swift */,
+				D6A0107F251A5D89004D9E54 /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,6 +205,8 @@
 			children = (
 				D65ACE61250F4E0100A56393 /* Authentication */,
 				D64EAA1E2518EAB100B46006 /* MessageViewModel.swift */,
+				D6A01069251A5932004D9E54 /* ConversationViewModel.swift */,
+				D60F73BA251AFA0D00EA3907 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -202,6 +219,10 @@
 				D6589B482511BC9E00E2CD4A /* UserCell.swift */,
 				D6787C072512FF3C0064ABC2 /* CustomInputAccessoryView.swift */,
 				D6F991AC25146F6E004CFFD3 /* MessageCell.swift */,
+				D6A01065251A563E004D9E54 /* ConversationCell.swift */,
+				D6A01082251A5F18004D9E54 /* ProfileHeader.swift */,
+				D60F73BC251AFB7F00EA3907 /* ProfileCell.swift */,
+				D60F73BF251B018900EA3907 /* ProfileFooter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,25 +352,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A01080251A5D89004D9E54 /* ProfileController.swift in Sources */,
 				D6E66C0424FF732400553157 /* ViewController.swift in Sources */,
 				D62814D12519B86900FA55E0 /* Constants.swift in Sources */,
+				D60F73BB251AFA0D00EA3907 /* ProfileViewModel.swift in Sources */,
 				D65ACE64250F4E3400A56393 /* RegistrationViewModel.swift in Sources */,
 				D6E66C0024FF732400553157 /* AppDelegate.swift in Sources */,
 				D656FD8A2510B7D4009C1383 /* AuthService.swift in Sources */,
 				D64EAA1F2518EAB100B46006 /* MessageViewModel.swift in Sources */,
+				D60F73C0251B018900EA3907 /* ProfileFooter.swift in Sources */,
 				D6E66C1B24FF7D6000553157 /* ConversationsController.swift in Sources */,
 				D6E66C0224FF732400553157 /* SceneDelegate.swift in Sources */,
 				D6589B492511BC9E00E2CD4A /* UserCell.swift in Sources */,
 				D6DDA725250128610079B88D /* RegistrationController.swift in Sources */,
 				D6589B4B2511C16800E2CD4A /* User.swift in Sources */,
+				D60F73BD251AFB7F00EA3907 /* ProfileCell.swift in Sources */,
 				D6589B4D2511C1B000E2CD4A /* Service.swift in Sources */,
 				D6563CC8250DE0C400F89946 /* InputContainerView.swift in Sources */,
+				D6A0106A251A5932004D9E54 /* ConversationViewModel.swift in Sources */,
 				D6DDA723250128400079B88D /* LoginController.swift in Sources */,
 				D6DDA72725012CC20079B88D /* Extensions.swift in Sources */,
 				D658A5AE250E5DC000ECF341 /* LoginViewModel.swift in Sources */,
+				D6A01083251A5F18004D9E54 /* ProfileHeader.swift in Sources */,
 				D6589B522511F68400E2CD4A /* ChatController.swift in Sources */,
 				D6563CCA250DE3E900F89946 /* CustomTextField.swift in Sources */,
 				D6589B462511B7A500E2CD4A /* NewMessageController.swift in Sources */,
+				D6A01066251A563E004D9E54 /* ConversationCell.swift in Sources */,
 				D64EAA1C2518E70E00B46006 /* Message.swift in Sources */,
 				D6F991AD25146F6E004CFFD3 /* MessageCell.swift in Sources */,
 				D6787C082512FF3C0064ABC2 /* CustomInputAccessoryView.swift in Sources */,
